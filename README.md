@@ -60,6 +60,17 @@ POST http://localhost:9090/pagamentos
 
 Use uma ferramenta como `curl`, Postman, ou Insomnia para enviar a requisição.
 
+**Sugestão de CURL**:
+```json
+curl --location 'http://localhost:9090/pagamentos' \
+--header 'Content-Type: application/json' \
+--data '{
+"numero": 3,
+"valor": 150,
+"descricao": "Pagamento de serviço"
+}'
+```
+
 ---
 
 Pronto! Agora você deve estar com o ambiente Kafka configurado e pronto para testar o fluxo de mensagens entre Producer e Consumer.
